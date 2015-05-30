@@ -1,10 +1,13 @@
-# Switch toggle field 
+Switch toggle field 
+============
+![Release](https://img.shields.io/github/release/distantnative/switch.svg)  [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/kirby-relativedate/issues)
+
 This plugin provides a switch toggle field for the Kirby 2 Panel:
 
 ![switch](https://cloud.githubusercontent.com/assets/3788865/6529068/88780f92-c426-11e4-87f4-386ca9ab1b05.gif)
 
-### Installation
-Copy th ```switch``` folder to ```site/fields```
+### Installation & Update
+Copy the files to `site/fields/switch/`.
 
 ### Using
 In your blueprint:
@@ -17,3 +20,10 @@ switchit:
 ```
 
 As it is basically a single checkbox, [this documentation](http://getkirby.com/docs/cheatsheet/panel-fields/checkbox) applies.
+
+# Version history
+
+**0.2**
+- Changed the repo name to `switch`, restructured the files
+- Inherits now from checkbox field
+- Fixed display bug, when `text` is not specified

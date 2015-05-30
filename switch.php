@@ -1,6 +1,6 @@
 <?php
 
-class SwitchField extends InputField {
+class SwitchField extends CheckboxField {
 
   static public $assets = array(
      'css' => array(
@@ -40,15 +40,9 @@ class SwitchField extends InputField {
 
   }
 
-  public function result() {
-
-    $result = parent::result();
-    return v::accepted($result) ? true : false;
-
-  }
-
-  public function validate() {
-    return v::accepted($this->value());
+  public function text() {
+    $text = parent::text();
+    return empty($text) ? ' ' : $text;
   }
 
 }
