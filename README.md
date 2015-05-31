@@ -23,6 +23,9 @@ As it is basically a single checkbox, [this documentation](http://getkirby.com/d
 
 # Version history
 
+**0.3**
+- CSS improvements
+
 **0.2**
 - Changed the repo name to `switch`, restructured the files
 - Inherits now from checkbox field

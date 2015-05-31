@@ -12,7 +12,6 @@ class SwitchField extends CheckboxField {
 
     $input = new Brick('input', null);
     $input->addClass('tgl');
-    $input->addClass('tgl-light');
     $input->attr(array(
       'id'           => $this->id(),
       'name'         => $this->name(),
