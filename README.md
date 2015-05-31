@@ -1,4 +1,4 @@
-Switch toggle field 
+Switch toggle field for Kirby 2
 ============
 ![Release](https://img.shields.io/github/release/distantnative/switch.svg)  [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/kirby-relativedate/issues)
 
