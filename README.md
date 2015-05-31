@@ -1,6 +1,6 @@
 Switch toggle field for Kirby 2
 ============
-![Release](https://img.shields.io/github/release/distantnative/switch.svg)  [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/kirby-relativedate/issues)
+![Release](https://img.shields.io/github/release/distantnative/switch.svg)  [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/switch/issues)
 
 This plugin provides a switch toggle field for the Kirby 2 Panel:
 
