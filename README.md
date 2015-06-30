@@ -1,6 +1,7 @@
 ![Switch Field for Kirby CMS](http://distantnative.com/remote/github/kirby-switch-github.png)  
 
-[![Release](https://img.shields.io/github/release/distantnative/switch.svg)](https://github.com/distantnative/switch/releases)  [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/switch/issues) [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://raw.githubusercontent.com/distantnative/switch/master/LICENSE)
+[![Release](https://img.shields.io/github/release/distantnative/switch.svg)](https://github.com/distantnative/switch/releases)  [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/switch/issues) [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://raw.githubusercontent.com/distantnative/switch/master/LICENSE) [![Moral Licenses](https://img.shields.io/badge/buy-moral_licenses-8dae28.svg)](https://gumroad.com/distantnative)
+
 
 This plugin provides a switch toggle field for the Kirby 2 Panel:
 
