@@ -15,4 +15,14 @@ switchit:
   text: You can turn me on and off
 ```
 
+If you want different texts for on and off state:
+
+```
+switchit:
+  label: Switch
+  type: switch
+  text_on: You can turn me off
+  text_off: You can turn me on
+```
+
 As it is basically a single checkbox, [this documentation](http://getkirby.com/docs/cheatsheet/panel-fields/checkbox) applies.

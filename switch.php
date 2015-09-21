@@ -28,7 +28,7 @@ class SwitchField extends CheckboxField {
 
     $wrapper = parent::input();
     $wrapper->tag('label');
-    $wrapper->text($this->i18n($this->text()));
+    $wrapper->html($this->i18n($this->text()));
     $wrapper->attr('for', $this->id());
     $wrapper->removeAttr('id');
     $wrapper->addClass('input-with-checkbox');
@@ -40,7 +40,12 @@ class SwitchField extends CheckboxField {
   }
 
   public function text() {
-    $text = parent::text();
+    if(isset($this->text_on) and isset($this->text_off)) {
+      $text  = '<span class="tgl-text-on">'.$this->text_on.'</span>';
+      $text .= '<span class="tgl-text-off">'.$this->text_off.'</span>';
+    } else  {
+      $text = parent::text();
+    }
     return empty($text) ? ' ' : $text;
   }
 
