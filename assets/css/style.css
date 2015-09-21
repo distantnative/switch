@@ -66,3 +66,11 @@
 .tgl:checked + .tgl-btn {
   background: #8dae28;
 }
+
+.tgl:not(:checked) ~ .tgl-text-on {
+  display: none;
+}
+
+.tgl:checked ~ .tgl-text-off {
+  display: none;
+}
