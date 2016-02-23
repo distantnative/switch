@@ -35,7 +35,7 @@ As it is basically a single checkbox, [this documentation](http://getkirby.com/d
 # Version history
 
 **v0.5**  
-- Swtiched to boolean values (true/false) to better match the toggle field type (thx to @creichel)
+- Switched to boolean values (true/false) to better match the toggle field type (thx to @creichel)
 
 **v0.4.**
 - Added option for different on and off state texts
