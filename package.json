@@ -1,0 +1,8 @@
+{
+  "name":     "Switch field",
+  "author":   "Nico Hoffmann",
+  "version":  "0.5",
+  "repository": {
+    "url": "https://github.com/distantnative/switch"
+  }
+}
