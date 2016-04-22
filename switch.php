@@ -31,7 +31,7 @@ class SwitchField extends CheckboxField {
     $wrapper->html($this->i18n($this->text()));
     $wrapper->attr('for', $this->id());
     $wrapper->removeAttr('id');
-    $wrapper->addClass('input-with-checkbox');
+    $wrapper->addClass('input-with-switch');
     $wrapper->prepend($btn);
     $wrapper->prepend($input);
 
@@ -48,7 +48,7 @@ class SwitchField extends CheckboxField {
     }
     return empty($text) ? ' ' : $text;
   }
-  
+
   public function result() {
     return v::accepted(parent::result()) ? 'true' : 'false';
   }

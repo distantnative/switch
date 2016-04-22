@@ -29,7 +29,6 @@
   height: 1.5em;
   margin-right: 1em;
   position: relative;
-  cursor: pointer;
   vertical-align: bottom;
   -ms-user-select: none;
   user-select: none;
@@ -38,6 +37,14 @@
   border-radius: 2em;
   padding: 2px;
   transition: all .4s ease;
+}
+
+.input-with-switch.input-is-readonly {
+  pointer-events: none;
+}
+
+.input-with-switch:not(.input-is-readonly) .tgl + .tgl-btn {
+  cursor: pointer;
 }
 
 .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
