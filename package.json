@@ -1,18 +1,19 @@
 {
-  "name":        "field-switch",
+  "name": "field-switch",
   "description": "Kirby Switch Field",
-  "author":      "Nico Hoffmann <nico@getkirby.com>",
-  "version":     "1.0.0",
-  "type":        "kirby-plugin",
-  "license":     "MIT",
+  "author": "Nico Hoffmann <nico@getkirby.com>",
+  "version": "1.0.0",
+  "type": "kirby-plugin",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url":  "https://github.com/distantnative/field-switch"
+    "url": "https://github.com/distantnative/field-switch"
   },
   "devDependencies": {
-    "gulp":              "^3.9.1",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-rename":       "^1.2.2",
-    "gulp-sass":         "^2.3.1"
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1"
   }
 }
