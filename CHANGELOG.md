@@ -1,5 +1,6 @@
 # 1.0 (2016-05-01)
 - Restructured as Kirby plugin that registers the field (requires Kirby 2.3)
+- Improved README and package.json (works now with the Kirby CLI)
 
 # 0.5  
 - Switched to boolean values (true/false) to better match the toggle field type (thx to @creichel)

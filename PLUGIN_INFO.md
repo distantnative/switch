@@ -2,13 +2,13 @@ This plugin provides a switch toggle field for the Kirby 2 Panel:
 
 ![switch](https://github.com/distantnative/switch/blob/master/switch.gif)
 
-# Requirements
+## Requirements
 Since version 1.0 the switch field requires Kirby CMS 2.3 – if you are running an older version of Kirby, please use [version 0.5](https://github.com/distantnative/switch/releases/tag/v0.5).
 
-# Installation & Update
+## Installation & Update
 Copy the files to `site/plugins/switch/`.
 
-# Usage
+## Usage
 In your blueprint:
 
 ```
