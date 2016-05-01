@@ -10,3 +10,7 @@ gulp.task('css', function() {
     .pipe(rename('style.css'))
     .pipe(gulp.dest('field/assets/css'));
 });
+
+gulp.task('watch', function() {
+  gulp.watch('field/assets/scss/**/*.scss', ['css']);
+});
