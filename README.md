@@ -1,6 +1,6 @@
 ![Switch Field for Kirby CMS](docs/logo.png)  
 
-[![Release](https://img.shields.io/github/release/distantnative/switch.svg)](https://github.com/distantnative/switch/releases) [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/switch/issues) [![Moral Licenses](https://img.shields.io/badge/buy-moral_license-8dae28.svg)](https://gumroad.com/distantnative)
+[![Release](https://img.shields.io/github/release/distantnative/switch.svg)](https://github.com/distantnative/switch/releases) [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/switch/issues)
 
 
 This plugin provides a switch toggle field for the Kirby 2 panel:  
@@ -35,10 +35,10 @@ switch:
     - I am off, you can turn me on
 ```
 
-As the switch field is basically just a restyled single checkbox, [this documentation](http://getkirby.com/docs/cheatsheet/panel-fields/checkbox) applies.
+As the switch field is basically just a restyled single checkbox, [this documentation](https://getkirby.com/docs/cheatsheet/panel-fields/checkbox) applies.
 
 ## Version history
-You can find a more or less complete version history in the [changelog](CHANGELOG.md).
+You can find a more or less complete version history in the [changelog](docs/CHANGELOG.md).
 
 ## License
 [MIT License](http://www.opensource.org/licenses/mit-license.php)
