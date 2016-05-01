@@ -12,7 +12,7 @@ Since version 1.0 the switch field requires Kirby CMS 2.3 or higher.
 If you are running an older version of Kirby, please use [version 0.5](https://github.com/distantnative/switch/releases/tag/v0.5) of the switch field.
 
 ## Installation & Update
-Copy the files to `site/plugins/switch/`.
+Copy the files to `site/plugins/field-switch/`.
 
 ## Usage
 In your blueprint:

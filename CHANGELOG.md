@@ -1,5 +1,6 @@
 # 1.0.0 (2016-05-01)
 - Restructured as Kirby plugin that registers the field (requires Kirby 2.3)
+- More precise plugin name `field-switch` (required renaming repository)
 - Leaner PHP code
 - Better scoping of CSS
 - Rewritten CSS as SCSS (using gulp)
