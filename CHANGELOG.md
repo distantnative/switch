@@ -1,5 +1,7 @@
 # 1.0.0 (2016-05-01)
 - Restructured as Kirby plugin that registers the field (requires Kirby 2.3)
+- Leaner PHP code
+- Better scoping of CSS
 - Rewritten CSS as SCSS (using gulp)
 - Relicensed under [MIT license](http://www.opensource.org/licenses/mit-license.php)
 - Improved README and package.json (works now with the Kirby CLI)

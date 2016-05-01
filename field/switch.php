@@ -2,7 +2,7 @@
 
 class SwitchField extends CheckboxField {
 
-  static public $assets = array(
+  public static $assets = array(
      'css' => array(
        'style.css'
      )
@@ -10,43 +10,43 @@ class SwitchField extends CheckboxField {
 
   public function input() {
 
-    $input = new Brick('input', null);
-    $input->addClass('tgl');
-    $input->attr(array(
-      'id'           => $this->id(),
-      'name'         => $this->name(),
-      'required'     => $this->required(),
-      'autofocus'    => $this->autofocus(),
-      'autocomplete' => $this->autocomplete(),
-      'readonly'     => $this->readonly(),
-      'type'         => 'checkbox',
-      'checked'      => v::accepted($this->value()),
-    ));
-    $btn = new Brick('label', null);
-    $btn->addClass('tgl-btn');
-    $btn->attr('for', $this->id());
-
     $wrapper = parent::input();
-    $wrapper->tag('label');
-    $wrapper->html($this->i18n($this->text()));
-    $wrapper->attr('for', $this->id());
-    $wrapper->removeAttr('id');
+    $wrapper->removeClass('input-with-checkbox');
     $wrapper->addClass('input-with-switch');
-    $wrapper->prepend($btn);
-    $wrapper->prepend($input);
+
+    $switch = new Brick('label', null);
+    $switch->addClass('btn');
+    $switch->attr('for', $this->id());
+    $wrapper->append($switch);
+    $wrapper->append($this->text(true));
 
     return $wrapper;
 
   }
 
-  public function text() {
-    if(isset($this->text_on) and isset($this->text_off)) {
-      $text  = '<span class="tgl-text-on">'.$this->text_on.'</span>';
-      $text .= '<span class="tgl-text-off">'.$this->text_off.'</span>';
-    } else  {
+  public function text($current = null) {
+
+    if($current === null) return;
+
+    if(isset($this->texts)) {
+      $texts = new Brick('span', null);
+      $texts->addClass('txt');
+
+      foreach (['on', 'off'] as $key => $state) {
+        $text  = new Brick('span', null);
+        $text->addClass($state);
+        $text->text($this->i18n($this->texts[$key]));
+        $texts->append($text);
+      }
+
+      return $texts;
+
+
+    } else {
       $text = parent::text();
+      return empty($text) ? ' ' : $this->i18n($text);
     }
-    return empty($text) ? ' ' : $text;
+
   }
 
   public function result() {

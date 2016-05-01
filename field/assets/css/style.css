@@ -1,6 +1,12 @@
-.tgl {
+.input-with-switch.input-is-readonly {
+  pointer-events: none; }
+
+.input-with-switch:not(.input-is-readonly) .checkbox + .btn {
+  cursor: pointer; }
+
+.input-with-switch .checkbox {
   display: none; }
-  .tgl + .tgl-btn {
+  .input-with-switch .checkbox + .btn {
     display: inline-block;
     position: relative;
     width: 3em;
@@ -17,51 +23,42 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none; }
-    .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+    .input-with-switch .checkbox + .btn:after, .input-with-switch .checkbox + .btn:before {
       display: block;
       position: relative;
       width: 50%;
       height: 100%;
       content: ''; }
-    .tgl + .tgl-btn:after {
+    .input-with-switch .checkbox + .btn:after {
       left: 0;
       -webkit-transition: left .3s ease;
       transition: left .3s ease;
       border-radius: 50%;
       background: #fff; }
-    .tgl + .tgl-btn:before {
+    .input-with-switch .checkbox + .btn:before {
       display: none; }
-  .tgl:checked + .tgl-btn {
+  .input-with-switch .checkbox:checked + .btn {
     background-color: #8dae28; }
-    .tgl:checked + .tgl-btn:after {
+    .input-with-switch .checkbox:checked + .btn:after {
       left: 50%; }
-  .tgl:checked ~ .tgl-text-off {
+  .input-with-switch .checkbox:checked ~ .txt > .off {
     display: none; }
-  .tgl:not(:checked) ~ .tgl-text-on {
+  .input-with-switch .checkbox:not(:checked) ~ .txt > .on {
     display: none; }
-
-.input-with-switch.input-is-readonly {
-  pointer-events: none; }
-
-.input-with-switch:not(.input-is-readonly) .tgl + .tgl-btn {
-  cursor: pointer; }
-
-.input-with-switch,
-.input-with-switch *,
-.input-with-switch :after,
-.input-with-switch :before,
-.input-with-switch + .tgl-btn, .input-with-switch:after,
-.input-with-switch :before {
-  box-sizing: border-box; }
-
-.input-with-switch ::-moz-selection,
-.input-with-switch :after::-moz-selection,
-.input-with-switch :before::-moz-selection,
-.input-with-switch + .tgl-btn::-moz-selection, .input-with-switch::-moz-selection, .input-with-switch:after::-moz-selection, .input-with-switch:before::-moz-selection {
-  background: 0 0; }
-
-.input-with-switch ::selection,
-.input-with-switch :after::selection,
-.input-with-switch :before::selection,
-.input-with-switch + .tgl-btn::selection, .input-with-switch::selection, .input-with-switch:after::selection, .input-with-switch:before::selection {
-  background: 0 0; }
+  .input-with-switch .checkbox,
+  .input-with-switch .checkbox *,
+  .input-with-switch .checkbox :after,
+  .input-with-switch .checkbox :before,
+  .input-with-switch .checkbox + .btn, .input-with-switch .checkbox:after,
+  .input-with-switch .checkbox :before {
+    box-sizing: border-box; }
+  .input-with-switch .checkbox ::-moz-selection,
+  .input-with-switch .checkbox :after::-moz-selection,
+  .input-with-switch .checkbox :before::-moz-selection,
+  .input-with-switch .checkbox + .btn::-moz-selection, .input-with-switch .checkbox::-moz-selection, .input-with-switch .checkbox:after::-moz-selection, .input-with-switch .checkbox:before::-moz-selection {
+    background: 0 0; }
+  .input-with-switch .checkbox ::selection,
+  .input-with-switch .checkbox :after::selection,
+  .input-with-switch .checkbox :before::selection,
+  .input-with-switch .checkbox + .btn::selection, .input-with-switch .checkbox::selection, .input-with-switch .checkbox:after::selection, .input-with-switch .checkbox:before::selection {
+    background: 0 0; }
