@@ -1,49 +1,47 @@
-![Switch Field for Kirby CMS](http://distantnative.com/remote/github/kirby-switch-github.png)  
+![Switch Field for Kirby CMS](docs/assets/logo.png)  
 
-[![Release](https://img.shields.io/github/release/distantnative/switch.svg)](https://github.com/distantnative/switch/releases)  [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/switch/issues) [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://raw.githubusercontent.com/distantnative/switch/master/LICENSE) [![Moral Licenses](https://img.shields.io/badge/buy-moral_licenses-8dae28.svg)](https://gumroad.com/distantnative)
+[![Release](https://img.shields.io/github/release/distantnative/switch.svg)](https://github.com/distantnative/switch/releases) [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/switch/issues)
 
 
-This plugin provides a switch toggle field for the Kirby 2 Panel:
+This plugin provides a switch toggle field for the Kirby 2 panel:  
 
-![switch](https://cloud.githubusercontent.com/assets/3788865/6529068/88780f92-c426-11e4-87f4-386ca9ab1b05.gif)
+![switch](docs/assets/example.gif)
 
-# Installation & Update
-Copy the files to `site/fields/switch/`.
+## Requirements
+Since version 1.0.0 the switch field requires Kirby CMS 2.3 or higher.  
+If you are running an older version of Kirby, please use [version 0.5.0](https://github.com/distantnative/switch/releases/tag/v0.5) of the switch field.
 
-# Usage
+## Installation & Update
+Copy the files to `site/plugins/field-switch/`.
+
+## Usage
 In your blueprint:
 
 ```
-switchit:
-  label: Switch
-  type: switch
-  text: You can turn me on and off
+traveling:
+  label: Travel mode
+  type:  switch
+  text:  Switch on when you are traveling - off when not
 ```
 
 If you want different texts for on and off state:
 
 ```
-switchit:
-  label: Switch
-  type: switch
-  text_on: You can turn me off
-  text_off: You can turn me on
+traveling:
+  label:    Travel mode
+  type:     switch
+  texts: 
+    - Switch is on, which means I am currently traveling
+    - Switch is off, so I am stuck at home
 ```
 
-As it is basically a single checkbox, [this documentation](http://getkirby.com/docs/cheatsheet/panel-fields/checkbox) applies.
+As the switch field is basically just a restyled single checkbox, [this documentation](https://getkirby.com/docs/cheatsheet/panel-fields/checkbox) applies.
 
-# Version history
+## Version history
+You can find a more or less complete version history in the [changelog](docs/CHANGELOG.md).
 
-**v0.5**  
-- Switched to boolean values (true/false) to better match the toggle field type (thx to @creichel)
+## License
+[MIT License](http://www.opensource.org/licenses/mit-license.php)
 
-**v0.4.**
-- Added option for different on and off state texts
-
-**v0.3**
-- CSS improvements
-
-**v0.2**
-- Changed the repo name to `switch`, restructured the files
-- Inherits now from checkbox field
-- Fixed display bug, when `text` is not specified
+## Author
+Nico Hoffmann - <https://nhoffmann.com>

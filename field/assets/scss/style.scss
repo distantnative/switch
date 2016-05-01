@@ -1,0 +1,98 @@
+
+$white:       #fff;
+$white-dirty: #efefef;
+$green:       #8dae28;
+
+.input-with-switch {
+  // Readonly
+  &.input-is-readonly {
+    pointer-events: none;
+  }
+
+  &:not(.input-is-readonly) {
+    .btn,
+    .txt {
+      cursor: pointer;
+    }
+  }
+
+  // Toggle
+  .btn {
+    display:          inline-block;
+    position:         relative;
+    width:            3em;
+    height:           1.5em;
+    margin-right:     1em;
+    padding:          2px;
+    transition:       background-color .3s ease;
+    border-radius:    2em;
+    outline:          0;
+    background-color: $white-dirty;
+    vertical-align:   bottom;
+    user-select:      none;
+
+    &:after,
+    &:before {
+      display:  block;
+      position: relative;
+      width:    50%;
+      height:   100%;
+      content:  '';
+    }
+
+    &:after {
+      left:          0;
+      transition:    left .3s ease;
+      border-radius: 50%;
+      background:    $white;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+  .checkbox {
+    display: none;
+
+    &:checked {
+      + .btn {
+        background-color: $green;
+
+        &:after {
+          left: 50%;
+        }
+      }
+
+      ~ .txt > .off {
+        display: none;
+      }
+    }
+
+    &:not(:checked) {
+      ~ .txt > .on {
+        display: none;
+      }
+    }
+
+    // CSS resets
+    &,
+    *,
+    :after,
+    :before,
+    + .btn,
+    &:after,
+    :before {
+      box-sizing: border-box;
+    }
+
+    & ::selection,
+    & :after::selection,
+    & :before::selection,
+    & + .btn::selection,
+    &::selection,
+    &:after::selection,
+    &:before::selection {
+      background: 0 0;
+    }
+  }
+}
