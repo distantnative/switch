@@ -5,7 +5,10 @@
 
 This plugin provides a switch toggle field for the Kirby 2 Panel:
 
-![switch](https://cloud.githubusercontent.com/assets/3788865/6529068/88780f92-c426-11e4-87f4-386ca9ab1b05.gif)
+![switch](docs/switch.gif)
+
+# Requirements
+Since version 1.0 the switch field requires Kirby CMS 2.3 – if you are running an older version of Kirby, please use [version 0.5](https://github.com/distantnative/switch/releases/tag/v0.5).
 
 # Installation & Update
 Copy the files to `site/fields/switch/`.
@@ -33,17 +36,4 @@ switchit:
 As it is basically a single checkbox, [this documentation](http://getkirby.com/docs/cheatsheet/panel-fields/checkbox) applies.
 
 # Version history
-
-**v0.5**  
-- Switched to boolean values (true/false) to better match the toggle field type (thx to @creichel)
-
-**v0.4.**
-- Added option for different on and off state texts
-
-**v0.3**
-- CSS improvements
-
-**v0.2**
-- Changed the repo name to `switch`, restructured the files
-- Inherits now from checkbox field
-- Fixed display bug, when `text` is not specified
+You can find a more or less complete version history in the [changelog](CHANGELOG.md).
