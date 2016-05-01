@@ -1,0 +1,97 @@
+
+$white:       #fff;
+$white-dirty: #efefef;
+$green:       #8dae28;
+
+.tgl {
+  display: none;
+
+  + .tgl-btn {
+    display:          inline-block;
+    position:         relative;
+    width:            3em;
+    height:           1.5em;
+    margin-right:     1em;
+    padding:          2px;
+    transition:       background-color .3s ease;
+    border-radius:    2em;
+    outline:          0;
+    background-color: $white-dirty;
+    vertical-align:   bottom;
+    user-select:      none;
+
+    &:after,
+    &:before {
+      display:  block;
+      position: relative;
+      width:    50%;
+      height:   100%;
+      content:  '';
+    }
+
+    &:after {
+      left:          0;
+      transition:    left .3s ease;
+      border-radius: 50%;
+      background:    $white;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:checked {
+    + .tgl-btn {
+      background-color: $green;
+
+      &:after {
+        left: 50%;
+      }
+    }
+
+    ~ .tgl-text-off {
+      display: none;
+    }
+  }
+
+  &:not(:checked) {
+    ~ .tgl-text-on {
+      display: none;
+    }
+  }
+}
+
+
+// Fixes for readonly state
+.input-with-switch {
+  &.input-is-readonly {
+    pointer-events: none;
+  }
+
+  &:not(.input-is-readonly) {
+    .tgl + .tgl-btn {
+      cursor: pointer;
+    }
+  }
+
+  &,
+  *,
+  :after,
+  :before,
+  + .tgl-btn,
+  &:after,
+  :before {
+    box-sizing: border-box;
+  }
+
+  & ::selection,
+  & :after::selection,
+  & :before::selection,
+  & + .tgl-btn::selection,
+  &::selection,
+  &:after::selection,
+  &:before::selection {
+    background: 0 0;
+  }
+}

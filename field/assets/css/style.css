@@ -1,83 +1,67 @@
 .tgl {
-  display: none;
-}
-
-.tgl,
-.tgl *,
-.tgl :after,
-.tgl :before,
-.tgl+.tgl-btn,
-.tgl:after,
-.tgl:before {
-  box-sizing: border-box;
-}
-
-.tgl ::selection,
-.tgl :after::selection,
-.tgl :before::selection,
-.tgl+.tgl-btn::selection,
-.tgl::selection,
-.tgl:after::selection,
-.tgl:before::selection {
-  background: 0 0;
-}
-
-.tgl + .tgl-btn {
-  outline: 0;
-  display: inline-block;
-  width: 3em;
-  height: 1.5em;
-  margin-right: 1em;
-  position: relative;
-  vertical-align: bottom;
-  -ms-user-select: none;
-  user-select: none;
-
-  background: #efefef;
-  border-radius: 2em;
-  padding: 2px;
-  transition: all .4s ease;
-}
+  display: none; }
+  .tgl + .tgl-btn {
+    display: inline-block;
+    position: relative;
+    width: 3em;
+    height: 1.5em;
+    margin-right: 1em;
+    padding: 2px;
+    -webkit-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+    border-radius: 2em;
+    outline: 0;
+    background-color: #efefef;
+    vertical-align: bottom;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+    .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+      display: block;
+      position: relative;
+      width: 50%;
+      height: 100%;
+      content: ''; }
+    .tgl + .tgl-btn:after {
+      left: 0;
+      -webkit-transition: left .3s ease;
+      transition: left .3s ease;
+      border-radius: 50%;
+      background: #fff; }
+    .tgl + .tgl-btn:before {
+      display: none; }
+  .tgl:checked + .tgl-btn {
+    background-color: #8dae28; }
+    .tgl:checked + .tgl-btn:after {
+      left: 50%; }
+  .tgl:checked ~ .tgl-text-off {
+    display: none; }
+  .tgl:not(:checked) ~ .tgl-text-on {
+    display: none; }
 
 .input-with-switch.input-is-readonly {
-  pointer-events: none;
-}
+  pointer-events: none; }
 
 .input-with-switch:not(.input-is-readonly) .tgl + .tgl-btn {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
-.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
-  position: relative;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
-}
+.input-with-switch,
+.input-with-switch *,
+.input-with-switch :after,
+.input-with-switch :before,
+.input-with-switch + .tgl-btn, .input-with-switch:after,
+.input-with-switch :before {
+  box-sizing: border-box; }
 
-.tgl + .tgl-btn:after {
-  left: 0;
-  border-radius: 50%;
-  background: #fff;
-  transition: all .2s ease;
-}
+.input-with-switch ::-moz-selection,
+.input-with-switch :after::-moz-selection,
+.input-with-switch :before::-moz-selection,
+.input-with-switch + .tgl-btn::-moz-selection, .input-with-switch::-moz-selection, .input-with-switch:after::-moz-selection, .input-with-switch:before::-moz-selection {
+  background: 0 0; }
 
-.tgl + .tgl-btn:before {
-  display: none;
-}
-
-.tgl:checked + .tgl-btn:after {
-  left: 50%;
-}
-
-.tgl:checked + .tgl-btn {
-  background: #8dae28;
-}
-
-.tgl:not(:checked) ~ .tgl-text-on {
-  display: none;
-}
-
-.tgl:checked ~ .tgl-text-off {
-  display: none;
-}
+.input-with-switch ::selection,
+.input-with-switch :after::selection,
+.input-with-switch :before::selection,
+.input-with-switch + .tgl-btn::selection, .input-with-switch::selection, .input-with-switch:after::selection, .input-with-switch:before::selection {
+  background: 0 0; }
