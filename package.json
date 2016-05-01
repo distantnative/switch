@@ -1,8 +1,12 @@
 {
-  "name":     "Switch field",
-  "author":   "Nico Hoffmann",
-  "version":  "0.5",
+  "name":        "switch",
+  "description": "Kirby Switch Field",
+  "author":      "Nico Hoffmann <nico@getkirby.com>",
+  "version":     "1.0.0",
+  "type":        "kirby-plugin",
+  "license":     "MIT",
   "repository": {
-    "url": "https://github.com/distantnative/switch"
+    "type":  "git",
+    "url":   "https://github.com/distantnative/switch"
   }
 }
