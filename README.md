@@ -5,7 +5,7 @@
 
 This plugin provides a switch toggle field for the Kirby 2 panel:  
 
-![switch](docs/switch.gif)
+![switch](docs/example.gif)
 
 ## Requirements
 Since version 1.0 the switch field requires Kirby CMS 2.3 or higher.  
