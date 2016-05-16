@@ -1,18 +1,23 @@
-![Switch Field for Kirby CMS](docs/assets/logo.png)  
+![Switch Field for Kirby CMS](v/logo.png)  
 
 [![Release](https://img.shields.io/github/release/distantnative/switch.svg)](https://github.com/distantnative/switch/releases) [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/switch/issues)
 
 
 This plugin provides a switch toggle field for the Kirby 2 panel:  
 
-![switch](docs/assets/example.gif)
+![switch](https://distantnative.com/remote/github/field-switch/example.gif)
 
 ## Requirements
 Since version 1.0.0 the switch field requires Kirby CMS 2.3 or higher.  
 If you are running an older version of Kirby, please use [version 0.5.0](https://github.com/distantnative/switch/releases/tag/v0.5) of the switch field.
 
 ## Installation & Update
-Copy the files to `site/plugins/field-switch/`.
+[Download](https://github.com/distantnative/field-switch/zipball/master/) all files and copy them to `site/plugins/field-switch/`.
+
+#### With the [Kirby CLI](https://github.com/getkirby/cli)
+```
+kirby plugin:install distantnative/field-switch
+```
 
 ## Usage
 In your blueprint:
