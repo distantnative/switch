@@ -1,4 +1,4 @@
-![Switch Field for Kirby CMS](v/logo.png)  
+![switch Field for Kirby CMS](https://distantnative.com/remote/github/field-switch/logo.png)  
 
 [![Release](https://img.shields.io/github/release/distantnative/switch.svg)](https://github.com/distantnative/switch/releases) [![Issues](https://img.shields.io/github/issues/distantnative/switch.svg)](https://github.com/distantnative/switch/issues)
 
