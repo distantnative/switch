@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.0.1](https://github.com/distantnative/field-switch/releases/tag/1.1) (2017-01-22)
+- Changed: location of CHANGELOG
+
 ## [1.0.1](https://github.com/distantnative/field-switch/releases/tag/1.0.1) (2016-05-16)
 - Minimized animation time
 - Removed example images from being stored in the repository

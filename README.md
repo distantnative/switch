@@ -43,7 +43,7 @@ traveling:
 As the switch field is basically just a restyled single checkbox, [this documentation](https://getkirby.com/docs/cheatsheet/panel-fields/checkbox) applies.
 
 ## Version history
-You can find a more or less complete version history in the [changelog](docs/CHANGELOG.md).
+You can find a more or less complete version history in the [changelog](CHANGELOG.md).
 
 ## License
 [MIT License](http://www.opensource.org/licenses/mit-license.php)
