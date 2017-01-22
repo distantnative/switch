@@ -2,7 +2,7 @@
   "name":        "field-switch",
   "description": "Kirby Switch Field",
   "author":      "Nico Hoffmann <nico@getkirby.com>",
-  "version":     "1.1",
+  "version":     "1.1.1",
   "type":        "kirby-plugin",
   "license":     "MIT",
   "repository": {
