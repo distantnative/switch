@@ -42,6 +42,25 @@ traveling:
 
 As the switch field is basically just a restyled single checkbox, [this documentation](https://getkirby.com/docs/cheatsheet/panel-fields/checkbox) applies.
 
+## Support other languages
+
+If you want to support multiple panel languages, you can use it like this:
+
+```
+traveling:
+  label:    
+    en: Travel mode
+    de: Reisemodus
+  type:     switch
+  texts:
+    - 
+      en: Switch is on, which means I am currently traveling
+      de: An, also reise ich gerade
+    - 
+      en: Switch is off, so I am stuck at home
+      de: Aus, also bin ich noch zuhause
+```
+
 ## Version history
 You can find a more or less complete version history in the [changelog](CHANGELOG.md).
 

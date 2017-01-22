@@ -1,6 +1,7 @@
 # Changelog
 
 ## [1.0.1](https://github.com/distantnative/field-switch/releases/tag/1.1) (2017-01-22)
+- Improved: Documentation for supporting multiple languages
 - Changed: location of CHANGELOG
 
 ## [1.0.1](https://github.com/distantnative/field-switch/releases/tag/1.0.1) (2016-05-16)
