@@ -24,7 +24,7 @@ $green:       #8dae28;
     height:           1.5em;
     margin-right:     1em;
     padding:          2px;
-    transition:       background-color .3s ease;
+    transition:       background-color .1s ease;
     border-radius:    2em;
     outline:          0;
     background-color: $white-dirty;
@@ -42,7 +42,7 @@ $green:       #8dae28;
 
     &:after {
       left:          0;
-      transition:    left .3s ease;
+      transition:    left .1s ease;
       border-radius: 50%;
       background:    $white;
     }
