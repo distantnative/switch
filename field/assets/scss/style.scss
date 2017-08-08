@@ -31,6 +31,11 @@ $green:       #8dae28;
     vertical-align:   bottom;
     user-select:      none;
 
+    body.rtl & {
+      margin-right: auto;
+      margin-left: 1em;
+    }
+
     &:after,
     &:before {
       display:  block;
@@ -60,6 +65,10 @@ $green:       #8dae28;
 
         &:after {
           left: 50%;
+
+          body.rtl & {
+            left: -50%;
+          }
         }
       }
 
